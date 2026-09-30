@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+    <style>
+        body {
+            background-color: #D5CFE1;
+            margin: 0px;
+            padding: 10px;
+        }
+        nav{
+            padding: 20px 0px;
+        }
+        .mainnav {
+            background-color: #FF4E00;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        a.mainnav:hover {
+            background-color: #2D2D2D;
+        }
+        .inner {
+            background-color: #918450;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            display: block;
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px dashed #ccc;
+        }
+        button{
+            background-color: #FF4E00;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        pricetable {
+            display: block;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #FF4E00;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footernav {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0px 10px;
+        }
+        a.footernav:hover {
+            color: #2D2D2D;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            color: #333;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cevapi-logo.jpeg" alt="logo" style="width: 300px">
+        <nav>
+            <a class="mainnav" href="index.html">Home</a>
+            <a class="mainnav" href="order.html">Order</a>
+            <a class="mainnav" href="tel:+1234567890">Call Us</a>
+        </nav>
+    </header>
+    <section class="inner">
+        <order>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name">
+                <label for="email">Your email</label>
+                <input type="email" id="email">
+                <label for="phone">Your phone</label>
+                <input type="text" id="phone">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount"> 
+                <button>Order Cevapi</button>
+            </form>
+        </order>
+        <pricetable>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Cevapi</td>
+                    <td>10 EUR</td> 
+                </tr>
+                <tr>
+                    <td>Saus</td>
+                    <td>5 EUR</td>
+                </tr>
+            </table>
+        </pricetable>
+    </section>
+    <footer>
+        <a class="footernav" href="index.html">Home</a>
+        <a class="footernav" href="order.html">Order</a>
+        <a class="footernav" href="tel:+1234567890">Call Us</a>
+    </footer>
+</body>
+</html>
